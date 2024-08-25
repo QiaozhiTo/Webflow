@@ -125,16 +125,16 @@ let thirdCircle = document.getElementsByClassName('thirdCircle')[0]
 let forthCircle = document.getElementsByClassName('forthCircle')[0]
 
 let video = document.getElementsByClassName('video')[0]
-
 internalCircle.addEventListener('mouseover', function(){
     video.style.opacity = '1'
     console.log('mouseover');
     thirdCircle.style.animation = 'changes 3s linear infinite'
     internalCircle.style.backgroundColor = 'black'
+    internalCircle.style.opacity ='1'
     outerCircle.style.backgroundColor = 'white'
     forthCircle.style.animation = 'changesOutter 3s linear infinite'
-    thirdCircle.style.opacity = '1'
-    forthCircle.style.opacity = '1'
+    thirdCircle.style.opacity = '0.4'
+    forthCircle.style.opacity = '0.4'
 
 })
 
@@ -142,10 +142,16 @@ internalCircle.addEventListener('mouseout', function(){
     console.log('mouseout');
     thirdCircle.style.animation = ''
     internalCircle.style.backgroundColor = 'white'
+    internalCircle.style.opacity='0.2'
     forthCircle.style.animation = ''
     video.style.opacity = '0'
     thirdCircle.style.opacity = '0'
     forthCircle.style.opacity = '0'
+    circleSocial.style.backgroundColor = ''
+    outerCircle.style.backgroundColor = ''
+
+
+
 
 
 
@@ -164,4 +170,12 @@ text.addEventListener('mouseover', function(){
 text.addEventListener('mouseout',function(){
     text.style.backgroundColor = ''
     text.style.transform = ''
+})
+
+let circleSocial = document.getElementsByClassName('circleSocial')[0]
+circleSocial.addEventListener('mouseover', function(){
+    circleSocial.style.backgroundColor = 'rgb(59 130 246 / .5)'
+})
+circleSocial.addEventListener('mouseout',function(){
+    circleSocial.style.backgroundColor = ''
 })
