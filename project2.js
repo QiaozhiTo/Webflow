@@ -147,12 +147,11 @@ internalCircle.addEventListener('mouseout', function(){
 
 let text = document.getElementsByClassName('text')[0]
 text.addEventListener('mouseover', function(){
-    // text.style.width = '60px'
-    // text.style.height = '40px'
     text.style.borderRadius = '4px'
-    text.style.transform = 'scale(1.1)'
-    // text.style.transition = 'all 3s'
-    text.style.backgroundColor = 'lightgrey'
+    // text.style.transform = 'scale(1.1)'
+    text.style.transition = 'all 3s'
+    text.style.backgroundColor = 'rgb(247, 248, 252)'
+    text.style.overflow = 'hidden'
     
 
 })

@@ -72,9 +72,9 @@
 
     /* height: 326px; */
     padding:80px 0 80px 0 ;
-    border: 1px solid lightgray;
+    border: 0.1px solid lightgray;
     position:fixed;
-    top:82px;
+    top:  80px;
 
 }
 .top{
@@ -106,6 +106,7 @@
     /* position: absolute; */
     display: flex;
     justify-content: center;
+    align-items: center;
 
 }
 @keyframes marginChange {
@@ -118,14 +119,14 @@
     
 }
 .journal .text{
-    width: 84.648px;height: 65px;
+    width: 64.359px;height: 20px;
     padding: 0 18px 0 18px;
     text-transform: uppercase;
     font-family: Inter, sans-serif;
     font-size: 14px;
     font-weight: 500;
     text-align: center;
-    line-height: 65px;
+    line-height: 20px;
     letter-spacing: 3px;
     color: rgb(8, 28, 58);
     
@@ -135,7 +136,7 @@
     width: 79px!important;
     height: 79px !important;
     background-color: white;
-    border:0px;
+    border:1px;
     position: absolute;
 }
 .center{
@@ -252,7 +253,7 @@
     border-radius: 50%;
     border: 1px dashed lightgray;
     position:absolute;
-    opacity: 20%;
+    opacity: 40%;
 
     /* box-shadow: 0px 0px 0px 5px white; */
 
@@ -280,6 +281,7 @@
     border: 1px dashed lightgray;
     position: absolute;
     opacity: 0;
+    object-fit: cover;
 }
 .destinOption{
     width: 452px;
@@ -389,7 +391,8 @@
 }
 .scrollBar{
     width: 344px;
-    height: 221.805px;
+    /* height: 221.805px; */
+    height: calc(100vh - 80px);
     padding:0 24px 36px 80px;
     background-color: white;
     overflow: auto;
