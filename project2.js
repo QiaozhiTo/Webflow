@@ -121,25 +121,31 @@ destination.addEventListener('click', function(){
 
 let internalCircle = document.getElementsByClassName('internalCircle')[0]
 let outerCircle =document.getElementsByClassName('outerCircle')[0]
+let thirdCircle = document.getElementsByClassName('thirdCircle')[0]
+let forthCircle = document.getElementsByClassName('forthCircle')[0]
+
 let video = document.getElementsByClassName('video')[0]
 
 internalCircle.addEventListener('mouseover', function(){
     video.style.opacity = '1'
     console.log('mouseover');
-    internalCircle.style.animation = 'changes 3s linear infinite'
+    thirdCircle.style.animation = 'changes 3s linear infinite'
     internalCircle.style.backgroundColor = 'black'
     outerCircle.style.backgroundColor = 'white'
-
-    outerCircle.style.animation = 'changesOutter 3s linear infinite'
+    forthCircle.style.animation = 'changesOutter 3s linear infinite'
+    thirdCircle.style.opacity = '1'
+    forthCircle.style.opacity = '1'
 
 })
 
 internalCircle.addEventListener('mouseout', function(){
     console.log('mouseout');
-    internalCircle.style.animation = ''
+    thirdCircle.style.animation = ''
     internalCircle.style.backgroundColor = 'white'
-    outerCircle.style.animation = ''
+    forthCircle.style.animation = ''
     video.style.opacity = '0'
+    thirdCircle.style.opacity = '0'
+    forthCircle.style.opacity = '0'
 
 
 
