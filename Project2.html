@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="./style.css">
     <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     <div class="container1">
@@ -173,21 +174,98 @@
 
     <!-- section 2 -->
     <div class="container2">
+        <!-- 1 -->
         <div class="topWrapper">
             <div class="text">
                 <div class="subtitle">Covilla Destinations</div>
                 <h1>Across the world</h1>
             </div>
         </div>
-        <div class="middle"></div>
+    <!-- 2  -->
+        <div class="middle">
+            <!-- <div class="pictureBox1"></div>
+            <div class="pictureBox2"></div>
+            <div class="pictureBox3"></div> -->
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"> 
+                    <img src="https://assets.website-files.com/606764630d23c37bf9d41bb1/607dcd3355581e17e093caed_011.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://assets.website-files.com/606764630d23c37bf9d41bb1/607dcd2961c3e396968aac28_031.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://assets.website-files.com/606764630d23c37bf9d41bb1/607dcd1ef1d9b0b767714525_001.jpeg" alt="">
+                </div>
+                
+                </div>
+               
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+              
+             </div>
+
+        </div>
+
+
+
+
     </div>
 
+<!-- section 3 -->
+<div class="container3">
+    <div class="introWrap">
+        <div class="left">
+            <div class="subtitle">Covilla benefits</div>
+            <h1>Take your family on the best vacation</h1>
+            <div class="textDisplay">Donec sed auctor orci. In a nisl vel nisi egestas efficitur nec ac neque. Sed vitae sollicitudin elit, ac tristique nisi. Pellentesque rutrum egestas massa lacinia volutpat. Integer et facilisis elit, vitae.</div>
+            <div class="optionBox">
+                <div class="textBox">
+                    <div class="text" >Choose a destination</div>
+                    <div class="icon">
+                        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+                        <span class="material-symbols-outlined">arrow_drop_down</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="right"></div>
+    </div>
+
+</div>
 
 
     
 
 
-    
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>   
+<script>
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+
+
+});
+</script>
 </body>
 </html>
 <script src="./project2.js"></script>

@@ -75,6 +75,7 @@
     border: 0.1px solid lightgray;
     position:fixed;
     top:  80px;
+    background-color: white;
 
 }
 .social{
@@ -507,7 +508,7 @@
 }
 
 
-/* container2 */
+/* ---------------container2 分割線----------------*/
 .container2{
     height: 100vh;
     width: 100%;
@@ -556,9 +557,139 @@
 }
 .middle{
     width: calc(100% - 80px);
+    /* width: 100%; */
     height: 450px;
     padding: 60px 0 48px 0;
     margin-left: 80px;
-    background-color: lavender;
+    /* background-color: lavender; */
+    display: flex;
+    justify-content: space-between;
 
+
+}
+/* 
+.pictureBox1{
+    width: 720px;
+    height: 378px;
+    padding-bottom: 72px;
+    background-color: pink;
+    margin-left: -72px;
+
+}
+.pictureBox2{
+    width: 720px;
+    height: 450px;
+    background-color: blanchedalmond;
+
+}
+.pictureBox3{
+    width: 720px;
+    height: 378px;
+    padding-bottom: 72px;
+    background-color: cornflowerblue;
+
+
+} */
+.swiper{
+    /* background-color: gold; */
+}
+.swiper-wrapper{
+    /* background-color: aquamarine; */
+
+}
+
+.swiper-slide img{
+    width: 720px;
+    height: 450px;
+    border-radius: 5px;
+    left: calc((100% - 720px - 80px) / 2);
+    position: relative;
+}
+
+.container3{
+    width: 1200px;
+    height: 893.4px;
+    padding: 140px 0 140px 80px;
+    background-color: #f7f8fc;
+
+}
+.introWrap{
+    width: 1200px;
+    height: 436.99px;
+    /* background-color: beige; */
+    padding-left: 80px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.left{
+    width: 475px;
+    height: 401px;
+    padding:18px 0 18px 0;
+    /* background-color: darkgray; */
+}
+.left .subtitle{
+    text-align: left;
+    height: 15.4px;
+    width: 475px;
+
+}
+
+.left h1{
+    width: 475px;
+    height: 120px;
+    font-family: Poppins, sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+}
+.textDisplay{
+    width: 475px;
+    height: 121.6px;
+    color: #516381;
+    font-size: 19px;
+    font-weight: 400;
+    padding-top:30px;
+    font-family: Inter, sans-serif;
+
+}
+.optionBox{
+    width: 217px;
+    height: 20px;
+    padding: 16px 32px 16px 32px;
+    background-color: #3572FF;
+    border-radius: 5px ;
+    color: white;
+    font-family: Poppins, sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: space-around;
+}
+.textBox{
+    width: 217px;
+    height: 20px;
+    /* padding: 16px 32px 16px 32px; */
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+}
+.text{
+    height: 20px;width: 193.79px;
+    font-size: 11px;
+    margin: 0;
+
+}
+.icon{
+    width: 14px;
+    height: 20px;
+    margin-left: 9px;
+}
+.right{
+    width: 605px;
+    height: 437px;
+    /* background-color: bisque; */
+    background-image: url('https://assets.website-files.com/60675f13ea324fdd4af9ef2a/6075041a5cc5c760b623c7e7_Travel004.jpeg');
+    background-size: 100% 100%;
 }
